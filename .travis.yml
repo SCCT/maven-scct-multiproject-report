@@ -1,6 +1,6 @@
 language: java
 after_script:
-  - if [[ $TRAVIS_TEST_RESULT == 0 && "$TRAVIS_BRANCH" == "master" ]]; then mvn deploy; fi
+  - if [[ $TRAVIS_TEST_RESULT == 0 && "$TRAVIS_BRANCH" == "master" ]]; then mvn deploy --settings settings.xml; fi
 env: 
   global: 
     secure: Cg2yVJEmL7NwB92qh+RA4NldQOW5QDGUbWlFQuWU76VgI7CTfBGzlqYp4Ux2cxiG/7u+6+rtJ0/s3X7HTk+q2BWAECI9ix6ao0G2Lgq1Dy9VnKYJYxfija0x74KSYlPp+FxLv/qq0HcLjy1xtmW+LVWcUF8iajAvxJlAgYaobCo=
