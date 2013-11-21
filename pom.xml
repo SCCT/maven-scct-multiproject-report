@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>reaktor.scct</groupId>
+  <groupId>com.github.scct</groupId>
   <artifactId>maven-scct-multiproject-report</artifactId>
   <version>0.2-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
@@ -12,17 +12,11 @@
     <scala.version>2.10.0-RC3</scala.version>
     <scct.scala.version>2.10</scct.scala.version>
   </properties>
-  <repositories>
-    <repository>
-      <id>scct-local-repo</id>
-      <url>file:///Users/mtkopone/dev/scct-root/gh-pages/maven-repo/</url>
-    </repository>
-  </repositories>
   <distributionManagement>
     <repository>
-      <id>local-gh-pages</id>
-      <name>Local-gh-pages</name>
-      <url>file:///Users/mtkopone/dev/scct-root/gh-pages/maven-repo/</url>
+      <id>sonatype-nexus-snapshots</id>
+      <name>sonatype-nexus-snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
   </distributionManagement>
   <dependencies>
@@ -32,9 +26,9 @@
       <version>${scala.version}</version>
     </dependency>
     <dependency>
-      <groupId>reaktor</groupId>
+      <groupId>com.github.scct</groupId>
       <artifactId>scct_${scct.scala.version}</artifactId>
-      <version>0.2-SNAPSHOT</version>
+      <version>0.2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.maven.reporting</groupId>

@@ -1,11 +1,11 @@
-package reaktor.scct.maven;
+package com.github.scct.maven;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.project.MavenProject;
 import org.apache.maven.reporting.MavenReport;
 import org.apache.maven.reporting.MavenReportException;
 import org.codehaus.doxia.sink.Sink;
-import reaktor.scct.report.MultiProjectHtmlReporter;
+import com.github.scct.report.MultiProjectHtmlReporter;
 
 import java.io.File;
 import java.util.ArrayList;
